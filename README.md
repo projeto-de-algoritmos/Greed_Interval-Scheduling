@@ -11,22 +11,49 @@
 
 ## Sobre
 
-Descreva os objetivos do seu projeto e como ele funciona.
+O objetivo principal do projeto é utilizar o algoritmo Interval Scheduling para sugerir uma agenda de acordo com as tarefas adicionadas pelo usuário.
 
 ## Screenshots
 
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+<img src="img/Screenshot_1.jpg">
+<img src="img/Screenshot_2.jpg">
+<img src="img/Screenshot_3.jpg">
 
 ## Instalação
 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: JavaScript<br>
+**Framework**: Next.js<br>
+
+### Pré-requisitos
+
+- Ter o [Node.js](https://nodejs.org/en) instalado
+- Foi utilizada a v18.16.0 nesse projeto
+
+### Como rodar o projeto
+
+Depois de clonar o repositório:
+
+- Entrar no diretório "task-scheduling"
+
+```
+cd task-scheduling/
+```
+
+- Instalar as dependências
+
+```
+npm install
+```
+
+- Rodar o projeto
+
+```
+npm run dev
+```
+
+O projeto será aberto no link http://localhost:3000/
 
 ## Uso
 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros
-
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+- Após adicionar pelo menos uma tarefa aparecerá o botão GERAR AGENDA
+- Clique em GERAR AGENDA para visualizar as tarefas que não possuem conflito de horário
