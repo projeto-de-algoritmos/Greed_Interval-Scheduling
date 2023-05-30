@@ -59,10 +59,10 @@ const TasksList = ({ tasks, setTasks, setGerarLista }) => {
       </ul>
       {tasks.length > 0 && (
         <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded uppercase"
           onClick={() => setGerarLista(true)}
         >
-          Gerar Lista
+          Gerar Agenda
         </button>
       )}
     </div>
