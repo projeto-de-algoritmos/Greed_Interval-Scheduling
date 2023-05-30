@@ -2,7 +2,7 @@ import React from "react";
 
 import { useForm } from "react-hook-form";
 
-const TaskForm = ({ tasks, setTasks }) => {
+const TaskForm = ({ tasks, setTasks, setGerarLista }) => {
   const {
     register,
     handleSubmit,
@@ -29,6 +29,7 @@ const TaskForm = ({ tasks, setTasks }) => {
     };
 
     setTasks([...tasks, newTask]);
+    setGerarLista(false);
   };
 
   return (
@@ -40,7 +41,9 @@ const TaskForm = ({ tasks, setTasks }) => {
         className="grid grid-cols-2 gap-5 "
       >
         <div className="flex flex-col col-span-2">
-          <label htmlFor="name">Nome da tarefa</label>
+          <label htmlFor="name" className="font-medium">
+            Nome da tarefa
+          </label>
           <input
             type="text"
             id="name"
@@ -50,7 +53,9 @@ const TaskForm = ({ tasks, setTasks }) => {
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="start">Horário de início</label>
+          <label htmlFor="start" className="font-medium">
+            Horário de início
+          </label>
           <input
             type="time"
             id="start"
@@ -60,7 +65,9 @@ const TaskForm = ({ tasks, setTasks }) => {
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="finish">Horário de termino</label>
+          <label htmlFor="finish" className="font-medium">
+            Horário de termino
+          </label>
           <input
             type="time"
             id="finish"

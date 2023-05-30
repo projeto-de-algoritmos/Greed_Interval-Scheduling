@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import TasksList from "@components/TasksList";
 import Schedule from "@components/Schedule";
@@ -9,18 +9,29 @@ import intervalScheduling from "@utils/IntervalScheduling";
 
 export default function Home() {
   const [tasks, setTasks] = useState([]);
+  const [results, setResults] = useState([]);
   const [gerarLista, setGerarLista] = useState(false);
 
+  useEffect(() => {
+    setResults(intervalScheduling(tasks));
+    console.log(results);
+    console.log(tasks);
+  }, [tasks]);
+
   return (
-    <div className="w-screen h-screen flex flex-row  justify-center absolute">
-      <div className="h-max-screen w-[80%] grid grid-cols-2 gap-10 mt-10 mb-10 relative">
-        <TaskForm tasks={tasks} setTasks={setTasks} />
+    <div className="flex flex-row justify-center">
+      <div className="w-[80%] grid grid-cols-2 gap-10 mt-10 mb-10">
+        <TaskForm
+          tasks={tasks}
+          setTasks={setTasks}
+          setGerarLista={setGerarLista}
+        />
         <TasksList
           tasks={tasks}
           setTasks={setTasks}
           setGerarLista={setGerarLista}
         />
-        {gerarLista && <Schedule tasks={tasks} />}
+        {gerarLista && <Schedule results={results} />}
       </div>
     </div>
   );
