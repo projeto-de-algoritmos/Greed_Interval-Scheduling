@@ -1,6 +1,6 @@
 # Interval-Scheduling
 
-**Número da Lista**: X<br>
+**Número da Lista**: 48<br>
 **Conteúdo da Disciplina**: Greed<br>
 
 ## Alunos
@@ -21,7 +21,7 @@ O objetivo principal do projeto é utilizar o algoritmo Interval Scheduling para
 
 ## Vídeo de apresentação
 
-<iframe width="640" height="360" src="https://www.loom.com/embed/b62f1a02ae2c4fc9b5f143804e856a11" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+[Link para o vídeo de apresentação](https://youtu.be/uaBBs01ukJg)
 
 ## Instalação
 
