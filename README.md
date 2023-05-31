@@ -19,6 +19,10 @@ O objetivo principal do projeto é utilizar o algoritmo Interval Scheduling para
 <img src="img/Screenshot_2.jpg">
 <img src="img/Screenshot_3.jpg">
 
+## Vídeo de apresentação
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b62f1a02ae2c4fc9b5f143804e856a11" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 ## Instalação
 
 **Linguagem**: JavaScript<br>
